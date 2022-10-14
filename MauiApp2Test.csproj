@@ -39,35 +39,10 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
-
-		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="Platforms\Android\raw\my_ca\appservicesca.pem" />
-	  <None Remove="Platforms\Android\Resources\raw\my_ca\appservicesca.pem" />
-	  <None Remove="Platforms\Android\Resources\xml\network_security_config.xml" />
-	  <None Remove="Resources\Raw\my_ca\appservicesca.pem" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Include="Platforms\Android\raw\my_ca\appservicesca.pem">
-	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
-	  </MauiAsset>
-	  <MauiAsset Include="Platforms\Android\Resources\raw\my_ca\appservicesca.pem">
-	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
-	  </MauiAsset>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Update="Resources\Raw\my_ca\appservicesca.pem">
-	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
-	  </MauiAsset>
 	</ItemGroup>
 
 </Project>
